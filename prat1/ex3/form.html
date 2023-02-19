@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form example</title>
+    </head>
+    <body>
+        <form>
+            <label>Name:
+                <input name="name" type="text" placeholder="John Doe" required>
+            </label>
+            <br>
+            <br>
+            <label><input type="radio" name="age" value="&lt;18">&lt;18</label>
+            <label><input type="radio" name="age" value="19-35">19-35</label>
+            <label><input type="radio" name="age" value="19-35">19-35</label>
+            <label><input type="radio" name="age" value="&gt;49">&gt;49</label>
+            <br>
+            <br>
+            <label>Profession:
+                <input name="profession" list="professions">
+                <datalist id="professions">
+                    <option value="scientist">Scientist</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="police-officer">Police Officer</option>
+                    <option value="clown">Clown</option>
+                    <option value="juggler">Juggler</option>
+                    <option value="writer">Writer</option>
+                    <option value="nurse">Nurse</option>
+                </datalist>
+            </label>
+            <br>
+            <br>
+            <label>Country:
+                <select name="Country" required>
+                    <option value="">Select an option</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="spain">Spain</option>
+                    <option value="germany">Germany</option>
+                    <option value="italy">Italy</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <p>Interests:<br></p>
+            <label>Basketball<input type="checkbox" name="interests" value="basketball"></label>
+            <label>Photography<input type="checkbox" name="interests" value="photography"></label>
+            <label>Tennis<input type="checkbox" name="interests" value="tennis"></label>
+            <label>Programming<input type="checkbox" name="interests" value="programming"></label>
+            <label>Reading<input type="checkbox" name="interests" value="reading"></label>
+            <label>Food<input type="checkbox" name="interests" value="food"></label>
+            <br>
+            <br>
+            <label>How did you find us?<br>
+                <textarea name="find-us" rows="10" cols="50"></textarea>
+            </label>
+            <button formmethod="get" formaction="save.php" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
