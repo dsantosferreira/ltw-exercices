@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Imperial+Script&family=Ruda&display=swap');
+
+body {
+    width: 40em;
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+#francesinha-img {
+    width: 100%;
+    height: auto
+}
+
+main {
+    background-color: #fbf0e4;
+    padding: 2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 7em;
+    font-family: 'Imperial Script', cursive;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    text-align: right;
+    font-family: 'Ruda', sans-serif;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+dl {
+    padding: 1em;
+    background-color: #f7cebf;
+    border: 2px dashed salmon;
+    border-right: 8px solid salmon;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+dl > *{
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+dt {
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+
+dd {
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 0.5em;
+}
+
+dd:last-child {
+    margin: 0;
+}
+
+p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.2em;
+}
+
+.ingredient {
+    color: #8eada3;
+    font-weight: bold;
+}
+
+li {
+    margin-bottom: 1.5em;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
