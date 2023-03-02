@@ -63,44 +63,44 @@ article > p {
     text-align: center;
 }
 
-#menu ul li a {
-    font-weight: 500;
-    color: black;
+#menu ul li {
+    padding: 1em 0;
 }
 
 #menu > ul li:nth-child(1) {
-    padding: 1em 0;
     border-top: 0.3em solid #E1493E;
 }
 
 #menu > ul li:nth-child(2) {
-    padding: 1em 0;
     border-top: 0.3em solid #8ABA56;
 }
 
 #menu > ul li:nth-child(3) {
-    padding: 1em 0;
     border-top: 0.3em solid #5B4282;
 }
 
 #menu > ul li:nth-child(4) {
-    padding: 1em 0;
     border-top: 0.3em solid #FF8932;
 }
 
 #menu > ul li:nth-child(5) {
-    padding: 1em 0;
     border-top: 0.3em solid #19B6E9;
 }
 
 #menu > ul li:nth-child(6) {
-    padding: 1em 0;
     border-top: 0.3em solid #E84C8B;
 }
 
-#menu li a {
-    color: black;
+#menu ul li a {
+    color: inherit;
     text-decoration: none;
+    font-weight: 500;
+    display: block;
+}
+
+#menu ul li:hover {
+    background-color: #2A2F33;
+    color: white;
 }
 
 aside {
