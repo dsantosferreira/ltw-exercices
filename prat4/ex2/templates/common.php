@@ -4,8 +4,12 @@
             <h1><a href="index.php">Super Legit News</a></h1>
             <h2><a href="index.php">Where fake news are born!</a></h2>
             <div id="signup">
-            <a href="register.html">Register</a>
-            <a href="login.html">Login</a>
+            <?php
+                if (array_key_exists('username', $_SESSION)) { ?>
+                    <a href="action_logout.php">Log out</a>
+            <?php } else { ?>
+                    <a href="login.php">Log in</a>
+            <?php } ?>
             </div>
         </header>
 <?php } ?>

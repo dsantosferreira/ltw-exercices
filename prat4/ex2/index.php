@@ -5,6 +5,7 @@
     require_once('templates/common.php');
     require_once('templates/news.php');
 
+    session_start();
     $db = getDatabaseConnection();
     $news = getAllNews($db);
 ?>

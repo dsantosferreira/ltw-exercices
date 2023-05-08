@@ -17,4 +17,23 @@
         $stmt->execute();
         return $stmt->fetch();
     }
+
+    function updateArticle(PDO $db, int $id, string $title, string $introduction, string $fulltext) {
+        $stmt = $db->prepare('UPDATE news
+                            SET title = :title, introduction = :introduction, fulltext = :fulltext
+                            WHERE id = :id'
+                        );
+        
+        print_r($id);
+        print_r($title);
+        print_r($introduction);
+        print_r($fulltext);
+                        
+        $stmt->bindParam(':id', $id);
+        $stmt->bindParam(':title', $title);
+        $stmt->bindParam(':introduction', $introduction);
+        $stmt->bindParam(':fulltext', $fulltext);
+        
+        $stmt->execute();
+    }
 ?>
